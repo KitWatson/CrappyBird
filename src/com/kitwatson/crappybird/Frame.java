@@ -12,7 +12,7 @@ public class Frame extends JFrame {
 
     public Frame() {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setTitle("CrappyBird");//
+        setTitle("CrappyBird");
         setResizable(false);
         init();
     }
