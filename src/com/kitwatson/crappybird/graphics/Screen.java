@@ -54,7 +54,8 @@ public class Screen extends JPanel implements Runnable {
             }
 
             Rectangle birdRect = new Rectangle(bird.getXCoor(), bird.getYCoor(), bird.getWidth(), bird.getHeight());
-            for (Pillar pillar : pillars) {
+            for (int i = 0; i < pillars.size(); i++) {
+                Pillar pillar = pillars.get(i);
                 if (birdRect.intersects(new Rectangle(pillar.getXCoor(), pillar.getYCoor(), pillar.getWidth(), pillar.getHeight()))) {
                     dead();
                 }
