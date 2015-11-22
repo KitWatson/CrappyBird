@@ -90,8 +90,8 @@ public class Screen extends JPanel implements Runnable {
         g.setColor(Color.YELLOW);
         floorBottom.draw(g);
 
-        for (Pillar pillar : pillars) {
-            pillar.draw(g);
+        for (int i = 0; i < pillars.size(); i++) {
+            pillars.get(i).draw(g);
         }
 
         bird.draw(g);
